@@ -1,0 +1,39 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: user-service
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/twitch
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: postgres
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: b.sevil326@gmail.com
+    password: nnmefmiaprgajhqa
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+security:
+  jwt:
+    secret-key: 95SbFQjODgPX4Av/yOIxoF57VDu+t+5/Ce0CmW0g8js=
+    expiration-time: 7200
