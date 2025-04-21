@@ -31,3 +31,5 @@ build/
 
 ### VS Code ###
 .vscode/
+### Application-dev ###
+user-service/src/main/resources/application-dev.yaml
